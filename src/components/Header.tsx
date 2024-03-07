@@ -5,9 +5,9 @@ import { uiKitModules } from "./constants";
 import Social from "./Social";
 import Image from "next/image";
 import Link from "next/link";
-import { DM_Sans } from 'next/font/google'
+import { Inter } from "next/font/google";
 
-const dmSans = DM_Sans({ subsets: ['latin'] })
+const inter = Inter({ subsets: ["latin"] });
 
 const StyledHeader = styled.header`
   width: 100%;
@@ -25,10 +25,10 @@ const StyledHeaderWrap = styled.div`
 
 export default function Header() {
   return (
-    <StyledContainer className={dmSans.className}>
+    <StyledContainer className={inter.className}>
       <StyledHeader>
         <Link href="/">
-          <Image src="/logo.svg" alt="winnick" width={90} height={70} />
+          <Image src="/logo.svg" alt="logo" width={90} height={70} />
         </Link>
 
         <StyledHeaderWrap>

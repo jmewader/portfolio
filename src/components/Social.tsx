@@ -7,7 +7,7 @@ const StyledSocial = styled.ul`
   list-style: none;
   display: flex;
   align-items: center;
-  gap: ${uiKitModules.x3}px;
+  gap: ${uiKitModules.x5}px;
 `;
 
 const StyledSocialItemLink = styled(Link)`
@@ -15,6 +15,12 @@ const StyledSocialItemLink = styled(Link)`
 `;
 
 const SocialList = [
+  {
+    title: "Telegram",
+    icon: "/telegram.svg",
+    alt: "telegram",
+    url: "https://t.me/jmewader",
+  },
   {
     title: "Github",
     icon: "/github.svg",

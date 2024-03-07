@@ -30,6 +30,21 @@ export const uiKitModules = {
   x28: 112,
   x29: 116,
   x30: 120,
+  x31: 124,
+  x32: 128,
+  x33: 132,
+  x34: 136,
+  x35: 140,
+  x36: 144,
+  x37: 148,
+  x38: 152,
+  x39: 156,
+  x40: 160,
+  x41: 164,
+  x42: 168,
+  x43: 172,
+  x44: 176,
+  x45: 180,
 } as const;
 
 export const uiKitBorderRadius = {
@@ -116,7 +131,8 @@ export const uiKitBreakpoints = {
 
 export const uiKitColors = {
   textMain: "#D9D9D9",
-  textSecondary: "#CCCCCC",
+  textWhite: "#ffffff",
+  textSecondary: "#A7A7A7",
   textAccent: "#8584EE",
 
   bgMain: "#191919",
@@ -125,7 +141,7 @@ export const uiKitColors = {
   strokesSecondary: "#B8B8B8",
   strokeSecondaryLight: "#F5F5F5",
   strokesAccent: "#000000",
-  strokesInvert: "#3D3D3D",
+  strokesInvert: "#272727",
   strokesDisable: "#E0E0E0",
   strokesSuccess: "#3DB83D80",
   strokesDanger: "#D5401F80",

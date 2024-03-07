@@ -1,13 +1,14 @@
 import styled from "styled-components";
-import { uiKitFontSizes, uiKitFontWeights, uiKitModules } from "../constants";
+import { uiKitModules } from "../constants";
 import { StyledContainer } from "../ui/Container";
 import Image from "next/image";
+import { StyledTitle } from "../ui/mainFonts";
 
 const StyledHero = styled.section`
   width: 100%;
   display: flex;
   align-items: center;
-  padding: ${uiKitModules.x15}px 0;
+  padding: ${uiKitModules.x20}px 0 ${uiKitModules.x12}px;
   justify-content: space-between;
 `;
 
@@ -17,11 +18,6 @@ const StyledHeroTextBlock = styled.div`
   width: 100%;
   justify-content: space-between;
   max-width: 600px;
-`;
-
-const StyledHeroTitle = styled.h1`
-  font-weight: ${uiKitFontWeights.bold};
-  font-size: ${uiKitFontSizes["5XL"]}px;
 `;
 
 const StyledHeroMarkText = styled.span`
@@ -48,15 +44,13 @@ export default function Hero() {
     <StyledContainer>
       <StyledHero>
         <StyledHeroTextBlock>
-          <StyledHeroTitle>
+          <StyledTitle>
             Приветствую!
-            <br />
-            Меня зовут Настя.
             <br />
             Я&nbsp;<StyledHeroMarkText>фронтенд-разработчик.</StyledHeroMarkText>
             <br />
             Создаю креативные и&nbsp;удобные интерфейсы.
-          </StyledHeroTitle>
+          </StyledTitle>
         </StyledHeroTextBlock>
         <StyledHeroImageBlock>
           <StyledHeroImage>
