@@ -20,5 +20,7 @@ export const StyledMainDescriptions = styled.p`
 `;
 
 export const StyledDescriptions = styled.p`
-  font-size: ${uiKitFontSizes.M}px;
+  font-size: ${uiKitFontSizes.XS}px;
+  font-weight: ${uiKitFontWeights.normal};
+  color: ${uiKitColors.textSecondaryDark};
 `;

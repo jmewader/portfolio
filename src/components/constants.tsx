@@ -76,10 +76,10 @@ export const uiKitFontSizes = {
 } as const;
 
 export const uiKitFontWeights = {
-  normal: 400,
-  medium: 500,
-  semibold: 600,
-  bold: 700,
+  normal: 300,
+  medium: 400,
+  semibold: 500,
+  bold: 600,
 } as const;
 
 export const uiKitLineHeights = {
@@ -134,8 +134,10 @@ export const uiKitColors = {
   textWhite: "#ffffff",
   textSecondary: "#A7A7A7",
   textAccent: "#8584EE",
+  textSecondaryDark: "#CCCCCC",
 
   bgMain: "#191919",
+  bgSecondary: "#363636",
 
   strokesMain: "#E0E0E0",
   strokesSecondary: "#B8B8B8",
