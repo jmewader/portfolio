@@ -21,6 +21,7 @@ import ThemeSwitcherImage from "../../../public/pet-project/theme-switcher.png";
 import TodoListImage from "../../../public/pet-project/todo-list.png";
 import TicTacToeImage from "../../../public/pet-project/tic-tac-toe.png";
 import PolarImage from "../../../public/pet-project/polar.png";
+import WeatherForecastImage from "../../../public/pet-project/weather-forecast.png";
 import PreviewIcon from "../../../public/link-chain.svg";
 import PreviewCodeIcon from "../../../public/github.svg";
 import Link from "next/link";
@@ -55,6 +56,7 @@ const PROJECTS_COMMERCIAL_DATA: ProjectType[] = [
 const PROJECTS_PET_DATA: ProjectType[] = [
   { title: "Session Artist", descriptions: "Портал по поиску музыкантов.", techStack: "HTML, CSS, SCSS, JavaScript", previewLink: "https://jmewader.github.io/session-artist", codeLink: "https://github.com/jmewader/session-artist", image: SessionArtistImage },
   { title: "Donuts", descriptions: "Веб-сайт о пончиках.", techStack: "HTML, CSS, JavaScript, React, Next.js, Vercel", previewLink: "https://nextjs-donut-git-main-jmewader.vercel.app", codeLink: "https://github.com/jmewader/nextjs-donut", image: DonutsImage },
+  { title: "Weather Forecast", descriptions: "Прогноз погоды.", techStack: "HTML, CSS, TypeScript, Vue", previewLink: "https://jmewader.github.io/weather-forecast", codeLink: "https://github.com/jmewader/weather-forecast", image: WeatherForecastImage },
   { title: "Bike", descriptions: "Модальное окно с переключаемыми вкладками и информацией.", techStack: "HTML, CSS, JavaScript", previewLink: "https://jmewader.github.io/bike", codeLink: "https://github.com/jmewader/bike", image: BikeImage },
   { title: "Polar", descriptions: "Интернет-магазин мороженого.", techStack: "HTML, CSS, JavaScript", previewLink: "https://github.com/jmewader/polar", codeLink: "https://jmewader.github.io/polar", image: PolarImage },
   { title: "Todo List", descriptions: "Интерактивный список дел.", techStack: "HTML, CSS, JavaScript, React, Next.js, Vercel, Grommet", previewLink: "https://nextjs-todo-git-main-jmewader.vercel.app", codeLink: "https://github.com/jmewader/nextjs-todo", image: TodoListImage },
