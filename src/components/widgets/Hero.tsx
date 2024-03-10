@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { uiKitModules } from "../constants";
+import { uiKitColors, uiKitModules } from "../constants";
 import { StyledContainer } from "../ui/Container";
 import Image from "next/image";
 import { StyledTitle } from "../ui/mainFonts";
@@ -21,7 +21,7 @@ const StyledHeroTextBlock = styled.div`
 `;
 
 const StyledHeroMarkText = styled.span`
-  background-image: linear-gradient(to right, #ff4e50, #f9d423);
+  background-image: linear-gradient(to right, ${uiKitColors.bgAccentRed}, ${uiKitColors.bgAccentYellow});
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;

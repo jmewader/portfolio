@@ -138,6 +138,8 @@ export const uiKitColors = {
 
   bgMain: "#191919",
   bgSecondary: "#363636",
+  bgAccentRed: "#ff4e50",
+  bgAccentYellow: "#f9d423",
 
   strokesMain: "#E0E0E0",
   strokesSecondary: "#B8B8B8",
