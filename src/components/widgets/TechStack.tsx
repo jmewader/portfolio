@@ -39,6 +39,7 @@ const StyledTechStack = styled.section`
   justify-content: space-between;
   gap: ${uiKitModules.x23}px;
   padding: ${uiKitModules.x30}px 0 ${uiKitModules.x30}px;
+  position: relative;
 `;
 
 const StyledTechStackTextBlock = styled.div`

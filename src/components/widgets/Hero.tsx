@@ -10,6 +10,7 @@ const StyledHero = styled.section`
   align-items: center;
   padding: ${uiKitModules.x20}px 0 ${uiKitModules.x12}px;
   justify-content: space-between;
+  position: relative;
 `;
 
 const StyledHeroTextBlock = styled.div`

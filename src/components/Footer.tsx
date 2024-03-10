@@ -16,6 +16,7 @@ const StyledFooter = styled.footer`
   padding: ${uiKitModules.x10}px 0;
   justify-content: space-between;
   flex-direction: column;
+  position: relative;
 `;
 
 const StyledFooterTop = styled.div`

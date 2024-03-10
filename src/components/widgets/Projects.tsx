@@ -72,6 +72,7 @@ const StyledProjects = styled.section`
   flex-direction: column;
   padding: ${uiKitModules.x20}px 0 ${uiKitModules.x12}px;
   justify-content: space-between;
+  position: relative;
 `;
 
 const StyledProjectsList = styled.ul`

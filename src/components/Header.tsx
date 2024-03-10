@@ -15,6 +15,7 @@ const StyledHeader = styled.header`
   align-items: center;
   padding: ${uiKitModules.x10}px 0;
   justify-content: space-between;
+  position: relative;
 `;
 
 const StyledHeaderWrap = styled.div`
