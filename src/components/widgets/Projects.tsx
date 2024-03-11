@@ -117,6 +117,7 @@ const StyledProjectsListItemContent = styled.div`
 
   @media ${uiKitBreakpoints.maxWidth.S} {
     padding: ${uiKitModules.x4}px ${uiKitModules.x4}px;
+    gap: ${uiKitModules.x2}px;
   }
 `;
 
@@ -148,10 +149,6 @@ const StyledProjectsListItemDescription = styled(StyledDescriptions)`
   font-weight: ${uiKitFontWeights.normal};
   font-size: ${uiKitFontSizes.XXS}px;
   margin: 0 0 ${uiKitModules.x3}px;
-
-  @media ${uiKitBreakpoints.maxWidth.L} {
-    font-size: ${uiKitFontSizes["3XS"]}px;
-  }
 `;
 
 const StyledProjectsListItemTechStack = styled.div`
