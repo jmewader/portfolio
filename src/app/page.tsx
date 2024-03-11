@@ -15,6 +15,8 @@ const StyledBg = styled(Image)`
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
+  object-fit: cover;
+  object-position: top;
 `;
 
 const StyledWrap = styled.div`
