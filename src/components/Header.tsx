@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { StyledContainer } from "./ui/Container";
 import Navigation from "./Navigation";
-import { uiKitModules } from "./constants";
+import { uiKitBreakpoints, uiKitModules } from "./constants";
 import Social from "./Social";
 import Image from "next/image";
 import Link from "next/link";
@@ -16,6 +16,10 @@ const StyledHeader = styled.header`
   padding: ${uiKitModules.x10}px 0;
   justify-content: space-between;
   position: relative;
+
+  @media ${uiKitBreakpoints.maxWidth.L} {
+    padding: ${uiKitModules.x5}px 0;
+  }
 `;
 
 const StyledHeaderWrap = styled.div`
@@ -24,18 +28,32 @@ const StyledHeaderWrap = styled.div`
   gap: ${uiKitModules.x13}px;
 `;
 
+const StyledHeaderLogo = styled.div`
+  width: 90px;
+  height: 70px;
+  display: flex;
+  position: relative;
+
+  @media ${uiKitBreakpoints.maxWidth.L} {
+    width: 70px;
+    height: 50px;
+  }
+`;
+
 export default function Header() {
   return (
     <StyledContainer className={inter.className}>
       <StyledHeader>
         <Link href="/">
-          <Image src="/logo.svg" alt="logo" width={90} height={70} />
+          <StyledHeaderLogo>
+            <Image src="/logo.svg" alt="logo" fill />
+          </StyledHeaderLogo>
         </Link>
 
         <StyledHeaderWrap>
-          <nav>
+          {/* <nav>
             <Navigation />
-          </nav>
+          </nav> */}
           <Social />
         </StyledHeaderWrap>
       </StyledHeader>

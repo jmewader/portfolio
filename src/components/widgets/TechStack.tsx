@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { uiKitModules } from "../constants";
+import { uiKitBreakpoints, uiKitModules } from "../constants";
 import { StyledContainer } from "../ui/Container";
 import { StyledMainDescriptions, StyledSubtitle } from "../ui/mainFonts";
 import HtmlIcon from "../../../public/tech/html.svg";
@@ -40,6 +40,16 @@ const StyledTechStack = styled.section`
   gap: ${uiKitModules.x23}px;
   padding: ${uiKitModules.x30}px 0 ${uiKitModules.x30}px;
   position: relative;
+
+  @media ${uiKitBreakpoints.maxWidth.L} {
+    padding: ${uiKitModules.x15}px 0 ${uiKitModules.x15}px;
+    gap: ${uiKitModules.x20}px;
+  }
+
+  @media ${uiKitBreakpoints.maxWidth.S} {
+    padding: ${uiKitModules.x12}px 0 ${uiKitModules.x12}px;
+    gap: ${uiKitModules.x14}px;
+  }
 `;
 
 const StyledTechStackTextBlock = styled.div`
@@ -64,6 +74,35 @@ const StyledIconList = styled.ul`
   gap: ${uiKitModules.x15}px ${uiKitModules.x20}px;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+
+  @media ${uiKitBreakpoints.maxWidth.L} {
+    gap: ${uiKitModules.x12}px ${uiKitModules.x17}px;
+  }
+
+  @media ${uiKitBreakpoints.maxWidth.S} {
+    gap: ${uiKitModules.x8}px ${uiKitModules.x13}px;
+    grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+  }
+
+  @media ${uiKitBreakpoints.maxWidth.XS} {
+    grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+  }
+`;
+
+const StyledIconListImage = styled.div`
+  position: relative;
+  width: 80px;
+  height: 80px;
+
+  @media ${uiKitBreakpoints.maxWidth.L} {
+    width: 65px;
+    height: 65px;
+  }
+
+  @media ${uiKitBreakpoints.maxWidth.S} {
+    width: 50px;
+    height: 50px;
+  }
 `;
 
 export default function TechStack() {
@@ -78,7 +117,9 @@ export default function TechStack() {
         <StyledIconList>
           {ICONS.map((item, index) => (
             <li key={index}>
-              <Image src={item.icon} alt={item.title} width={80} height={80} />
+              <StyledIconListImage>
+                <Image src={item.icon} alt={item.title} fill />
+              </StyledIconListImage>
             </li>
           ))}
         </StyledIconList>

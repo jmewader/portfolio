@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { uiKitColors, uiKitFontSizes, uiKitFontWeights, uiKitModules } from "../constants";
+import { uiKitBreakpoints, uiKitColors, uiKitFontSizes, uiKitFontWeights, uiKitModules } from "../constants";
 import { StyledContainer } from "../ui/Container";
 import Image, { StaticImageData } from "next/image";
 import { StyledDescriptions, StyledMainDescriptions, StyledSubtitle } from "../ui/mainFonts";
@@ -73,6 +73,10 @@ const StyledProjects = styled.section`
   padding: ${uiKitModules.x20}px 0 ${uiKitModules.x12}px;
   justify-content: space-between;
   position: relative;
+
+  @media ${uiKitBreakpoints.maxWidth.L} {
+    padding: ${uiKitModules.x15}px 0 ${uiKitModules.x15}px;
+  }
 `;
 
 const StyledProjectsList = styled.ul`
@@ -81,6 +85,17 @@ const StyledProjectsList = styled.ul`
   grid-template-columns: 1fr 1fr 1fr;
   gap: ${uiKitModules.x12}px;
   margin: ${uiKitModules.x25}px 0 0;
+
+  @media ${uiKitBreakpoints.maxWidth.L} {
+    grid-template-columns: 1fr 1fr;
+    gap: ${uiKitModules.x6}px;
+    margin: ${uiKitModules.x17}px 0 0;
+  }
+
+  @media ${uiKitBreakpoints.maxWidth.S} {
+    grid-template-columns: 1fr;
+    gap: ${uiKitModules.x4}px;
+  }
 `;
 
 const StyledProjectsListItem = styled.li`
@@ -99,6 +114,10 @@ const StyledProjectsListItemContent = styled.div`
   height: 100%;
   justify-content: space-between;
   gap: ${uiKitModules.x5}px;
+
+  @media ${uiKitBreakpoints.maxWidth.S} {
+    padding: ${uiKitModules.x4}px ${uiKitModules.x4}px;
+  }
 `;
 
 const StyledProjectsListItemImage = styled.div`
@@ -120,12 +139,20 @@ const StyledProjectsListItemTitle = styled.h3`
   font-size: ${uiKitFontSizes.L}px;
   font-weight: ${uiKitFontWeights.medium};
   margin: 0 0 ${uiKitModules.x2}px;
+
+  @media ${uiKitBreakpoints.maxWidth.L} {
+    font-size: ${uiKitFontSizes.M}px;
+  }
 `;
 
 const StyledProjectsListItemDescription = styled(StyledDescriptions)`
   font-weight: ${uiKitFontWeights.normal};
   font-size: ${uiKitFontSizes.XXS}px;
   margin: 0 0 ${uiKitModules.x3}px;
+
+  @media ${uiKitBreakpoints.maxWidth.L} {
+    font-size: ${uiKitFontSizes["3XS"]}px;
+  }
 `;
 
 const StyledProjectsListItemTechStack = styled.div`
@@ -157,12 +184,20 @@ const StyledProjectsListItemActionsItem = styled(Link)`
   &:hover {
     text-decoration: none;
   }
+
+  @media ${uiKitBreakpoints.maxWidth.L} {
+    font-size: ${uiKitFontSizes.XXS}px;
+  }
 `;
 
 const StyledProjectsTabs = styled.ul`
   display: flex;
   list-style: none;
   margin: ${uiKitModules.x9}px 0 0;
+
+  @media ${uiKitBreakpoints.maxWidth.L} {
+    margin: ${uiKitModules.x5}px 0 0;
+  }
 `;
 
 const StyledProjectsTab = styled.li<TabsType>`
@@ -174,6 +209,11 @@ const StyledProjectsTab = styled.li<TabsType>`
 
   &:hover {
     color: ${uiKitColors.bgAccentRed};
+  }
+
+  @media ${uiKitBreakpoints.maxWidth.L} {
+    font-size: ${uiKitFontSizes.XS}px;
+    padding: ${uiKitModules.x1}px ${uiKitModules.x3}px;
   }
 `;
 

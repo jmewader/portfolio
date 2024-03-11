@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { StyledContainer } from "./ui/Container";
 import Navigation from "./Navigation";
-import { uiKitColors, uiKitFontSizes, uiKitModules } from "./constants";
+import { uiKitBreakpoints, uiKitColors, uiKitFontSizes, uiKitModules } from "./constants";
 import Social from "./Social";
 import Link from "next/link";
 import Image from "next/image";
@@ -17,6 +17,10 @@ const StyledFooter = styled.footer`
   justify-content: space-between;
   flex-direction: column;
   position: relative;
+
+  @media ${uiKitBreakpoints.maxWidth.L} {
+    padding: ${uiKitModules.x5}px 0;
+  }
 `;
 
 const StyledFooterTop = styled.div`
@@ -25,6 +29,10 @@ const StyledFooterTop = styled.div`
   align-items: center;
   justify-content: space-between;
   padding: 0 0 ${uiKitModules.x8}px;
+
+  @media ${uiKitBreakpoints.maxWidth.L} {
+    padding: 0 0 ${uiKitModules.x4}px;
+  }
 `;
 
 const StyledFooterBottom = styled.div`
@@ -34,6 +42,10 @@ const StyledFooterBottom = styled.div`
   width: 100%;
   border-top: 2px solid ${uiKitColors.strokesInvert};
   padding: ${uiKitModules.x8}px 0 0;
+
+  @media ${uiKitBreakpoints.maxWidth.L} {
+    padding: ${uiKitModules.x4}px 0 0;
+  }
 `;
 
 const StyledFooterContact = styled.div`
@@ -54,10 +66,43 @@ const StyledContactLink = styled(Link)`
 `;
 
 const StyledCopyright = styled.p`
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
   color: ${uiKitColors.textSecondary};
   font-size: ${uiKitFontSizes.XS}px;
   text-align: center;
 `;
+
+const StyledFooterLogo = styled.div`
+  width: 90px;
+  height: 70px;
+  display: flex;
+  position: relative;
+
+  @media ${uiKitBreakpoints.maxWidth.L} {
+    width: 70px;
+    height: 50px;
+  }
+`;
+
+const StyledDesktopVisible = styled.div`
+  display: flex;
+
+  @media ${uiKitBreakpoints.maxWidth.S} {
+    display: none;
+  }
+`;
+
+const ContactInfo = () => {
+  return (
+    <StyledContactInfo>
+      <StyledContactLink href="tel:+79523635050">+7 (952) 3635050</StyledContactLink>
+      <StyledContactLink href="mailto:anastasiabovanenko@gmail.com">anastasiabovanenko@gmail.com</StyledContactLink>
+    </StyledContactInfo>
+  );
+};
 
 export default function Footer() {
   return (
@@ -65,23 +110,24 @@ export default function Footer() {
       <StyledFooter>
         <StyledFooterTop>
           <Link href="/">
-            <Image src="/logoV2.svg" alt="logo" width={90} height={70} />
+            <StyledFooterLogo>
+              <Image src="/logoV2.svg" alt="logo" fill />
+            </StyledFooterLogo>
           </Link>
 
           <StyledFooterContact>
-            <StyledContactInfo>
-              <StyledContactLink href="tel:+79523635050">+7 (952) 3635050</StyledContactLink>
-              <StyledContactLink href="mailto:anastasiabovanenko@gmail.com">anastasiabovanenko@gmail.com</StyledContactLink>
-            </StyledContactInfo>
+            <StyledDesktopVisible>
+              <ContactInfo />
+            </StyledDesktopVisible>
 
             <Social />
           </StyledFooterContact>
         </StyledFooterTop>
 
         <StyledFooterBottom>
-          <nav>
+          {/* <nav>
             <Navigation />
-          </nav>
+          </nav> */}
 
           <StyledCopyright> &copy; {new Date().getFullYear()} Winnick. Создано с ❤️ и ☕</StyledCopyright>
         </StyledFooterBottom>
