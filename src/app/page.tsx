@@ -8,15 +8,24 @@ import Projects from "~src/components/widgets/Projects";
 import TechStack from "~src/components/widgets/TechStack";
 import BgImage from "~src/images/bg.png";
 import styled from "styled-components";
+import { uiKitBreakpoints } from "~src/components/constants";
 
 const StyledBg = styled(Image)`
   position: absolute;
-  width: 100%;
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  object-fit: cover;
-  object-position: top;
+  width: 1718px;
+  height: 1966px;
+
+  @media ${uiKitBreakpoints.maxWidth.L} {
+    object-fit: cover;
+    object-position: top;
+    width: 1200px;
+    height: 1500px;
+  }
+
+  @media ${uiKitBreakpoints.maxWidth.S} {
+    width: 700px;
+    height: 1000px;
+  }
 `;
 
 const StyledWrap = styled.div`
@@ -27,7 +36,7 @@ const StyledWrap = styled.div`
 export default function Home() {
   return (
     <StyledWrap>
-      <StyledBg src={BgImage} alt="bg" width={1960} height={1960} />
+      <StyledBg src={BgImage} alt="bg" />
 
       <Header />
       <main>
