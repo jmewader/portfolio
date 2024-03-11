@@ -3,6 +3,7 @@ import { uiKitBreakpoints, uiKitColors, uiKitModules } from "../constants";
 import { StyledContainer } from "../ui/Container";
 import Image from "next/image";
 import { StyledTitle } from "../ui/mainFonts";
+import ImageHero from "~src/images/winnickV2.png";
 
 const StyledHero = styled.section`
   width: 100%;
@@ -83,7 +84,7 @@ export default function Hero() {
         </StyledHeroTextBlock>
         <StyledHeroImageBlock>
           <StyledHeroImage>
-            <Image src="/winnickV2.png" alt="winnick" fill />
+            <Image src={ImageHero} alt="winnick" fill />
           </StyledHeroImage>
         </StyledHeroImageBlock>
       </StyledHero>

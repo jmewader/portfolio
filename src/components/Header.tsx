@@ -6,6 +6,7 @@ import Social from "./Social";
 import Image from "next/image";
 import Link from "next/link";
 import { Inter } from "next/font/google";
+import LogoImage from '~src/images/logo.svg'
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -46,7 +47,7 @@ export default function Header() {
       <StyledHeader>
         <Link href="/">
           <StyledHeaderLogo>
-            <Image src="/logo.svg" alt="logo" fill />
+            <Image src={LogoImage} alt="logo" fill />
           </StyledHeaderLogo>
         </Link>
 

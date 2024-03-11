@@ -6,6 +6,7 @@ import Social from "./Social";
 import Link from "next/link";
 import Image from "next/image";
 import { Inter } from "next/font/google";
+import LogoImage from '~src/images/logoV2.svg'
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -111,7 +112,7 @@ export default function Footer() {
         <StyledFooterTop>
           <Link href="/">
             <StyledFooterLogo>
-              <Image src="/logoV2.svg" alt="logo" fill />
+              <Image src={LogoImage} alt="logo" fill />
             </StyledFooterLogo>
           </Link>
 
