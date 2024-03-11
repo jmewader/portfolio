@@ -14,6 +14,7 @@ const StyledBg = styled(Image)`
   position: absolute;
   width: 1718px;
   height: 1966px;
+  overflow: hidden;
 
   @media ${uiKitBreakpoints.maxWidth.L} {
     object-fit: cover;
