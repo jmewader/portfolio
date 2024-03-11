@@ -120,19 +120,18 @@ const StyledProjectsListItemContent = styled.div`
   }
 `;
 
-const StyledProjectsListItemImage = styled.div`
+const StyledProjectsListItemImage = styled(Image)`
   position: relative;
   display: flex;
   border-radius: ${uiKitModules.x5}px ${uiKitModules.x5}px 0 0;
-  min-height: 190px;
   width: 100%;
+  height: 100%;
   overflow: hidden;
-`;
 
-const StyledImage = styled(Image)`
-  width: 100%;
-  object-fit: contain;
-  height: auto !important;
+  @media ${uiKitBreakpoints.maxWidth.L} {
+    object-position: top;
+    object-fit: cover;
+  }
 `;
 
 const StyledProjectsListItemTitle = styled.h3`
@@ -247,9 +246,7 @@ export default function Projects() {
         <StyledProjectsList>
           {projectsData.map((item) => (
             <StyledProjectsListItem key={item.title}>
-              <StyledProjectsListItemImage>
-                <StyledImage src={item.image} alt={item.title} fill />
-              </StyledProjectsListItemImage>
+              <StyledProjectsListItemImage src={item.image} alt={item.title} />
 
               <StyledProjectsListItemContent>
                 <div>

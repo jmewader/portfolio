@@ -6,7 +6,7 @@ import Social from "./Social";
 import Image from "next/image";
 import Link from "next/link";
 import { Inter } from "next/font/google";
-import LogoImage from '~src/images/logo.svg'
+import LogoImage from "~src/images/logo.svg";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -29,9 +29,7 @@ const StyledHeaderWrap = styled.div`
   gap: ${uiKitModules.x13}px;
 `;
 
-const StyledHeaderLogo = styled.div`
-  width: 90px;
-  height: 70px;
+const StyledHeaderLogo = styled(Image)`
   display: flex;
   position: relative;
 
@@ -46,9 +44,7 @@ export default function Header() {
     <StyledContainer className={inter.className}>
       <StyledHeader>
         <Link href="/">
-          <StyledHeaderLogo>
-            <Image src={LogoImage} alt="logo" fill />
-          </StyledHeaderLogo>
+          <StyledHeaderLogo src={LogoImage} alt="logo" width={90} height={70} />
         </Link>
 
         <StyledHeaderWrap>

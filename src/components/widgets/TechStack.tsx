@@ -89,7 +89,7 @@ const StyledIconList = styled.ul`
   }
 `;
 
-const StyledIconListImage = styled.div`
+const StyledIconListImage = styled(Image)`
   position: relative;
   width: 80px;
   height: 80px;
@@ -117,9 +117,7 @@ export default function TechStack() {
         <StyledIconList>
           {ICONS.map((item, index) => (
             <li key={index}>
-              <StyledIconListImage>
-                <Image src={item.icon} alt={item.title} fill />
-              </StyledIconListImage>
+              <StyledIconListImage src={item.icon} alt={item.title} width={80} height={80} />
             </li>
           ))}
         </StyledIconList>

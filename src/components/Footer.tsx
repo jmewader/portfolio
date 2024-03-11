@@ -6,7 +6,7 @@ import Social from "./Social";
 import Link from "next/link";
 import Image from "next/image";
 import { Inter } from "next/font/google";
-import LogoImage from '~src/images/logoV2.svg'
+import LogoImage from "~src/images/logoV2.svg";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -76,9 +76,7 @@ const StyledCopyright = styled.p`
   text-align: center;
 `;
 
-const StyledFooterLogo = styled.div`
-  width: 90px;
-  height: 70px;
+const StyledFooterLogo = styled(Image)`
   display: flex;
   position: relative;
 
@@ -111,9 +109,7 @@ export default function Footer() {
       <StyledFooter>
         <StyledFooterTop>
           <Link href="/">
-            <StyledFooterLogo>
-              <Image src={LogoImage} alt="logo" fill />
-            </StyledFooterLogo>
+            <StyledFooterLogo src={LogoImage} alt="logo" width={90} height={70} />
           </Link>
 
           <StyledFooterContact>

@@ -43,20 +43,15 @@ const StyledHeroMarkText = styled.span`
   color: transparent;
 `;
 
-const StyledHeroImageBlock = styled.div`
-  display: flex;
-  flex-direction: column;
-  border-radius: 100%;
-  background-color: ${uiKitColors.bgMain};
-`;
-
-const StyledHeroImage = styled.div`
+const StyledHeroImage = styled(Image)`
   display: flex;
   justify-content: center;
   align-items: center;
   width: 260px;
   height: 260px;
   position: relative;
+  background-color: ${uiKitColors.bgMain};
+  border-radius: 100%;
 
   @media ${uiKitBreakpoints.maxWidth.L} {
     width: 200px;
@@ -82,11 +77,8 @@ export default function Hero() {
             Создаю креативные и&nbsp;удобные интерфейсы.
           </StyledTitle>
         </StyledHeroTextBlock>
-        <StyledHeroImageBlock>
-          <StyledHeroImage>
-            <Image src={ImageHero} alt="winnick" fill />
-          </StyledHeroImage>
-        </StyledHeroImageBlock>
+
+        <StyledHeroImage src={ImageHero} alt="winnick" width={260} height={260} />
       </StyledHero>
     </StyledContainer>
   );

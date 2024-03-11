@@ -9,7 +9,7 @@ import TechStack from "~src/components/widgets/TechStack";
 import BgImage from "~src/images/bg.png";
 import styled from "styled-components";
 
-const StyledBg = styled.div`
+const StyledBg = styled(Image)`
   position: absolute;
   width: 100%;
   display: flex;
@@ -25,9 +25,8 @@ const StyledWrap = styled.div`
 export default function Home() {
   return (
     <StyledWrap>
-      <StyledBg>
-        <Image src={BgImage} alt="bg" width={1960} height={1960} />
-      </StyledBg>
+      <StyledBg src={BgImage} alt="bg" width={1960} height={1960} />
+
       <Header />
       <main>
         <Hero />

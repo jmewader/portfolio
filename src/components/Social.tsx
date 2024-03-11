@@ -2,6 +2,8 @@ import styled from "styled-components";
 import { uiKitModules } from "./constants";
 import Image from "next/image";
 import Link from "next/link";
+import IconTelegram from "~src/images/telegram.svg";
+import IconGitHub from "~src/images/github.svg";
 
 const StyledSocial = styled.ul`
   list-style: none;
@@ -17,13 +19,13 @@ const StyledSocialItemLink = styled(Link)`
 const SocialList = [
   {
     title: "Telegram",
-    icon: "/telegram.svg",
+    icon: IconTelegram,
     alt: "telegram",
     url: "https://t.me/jmewader",
   },
   {
     title: "Github",
-    icon: "/github.svg",
+    icon: IconGitHub,
     alt: "github",
     url: "https://github.com/jmewader",
   },
