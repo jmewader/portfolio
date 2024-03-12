@@ -127,6 +127,7 @@ const StyledProjectsListItemImage = styled(Image)`
   border-radius: ${uiKitModules.x5}px ${uiKitModules.x5}px 0 0;
   width: 100%;
   height: 100%;
+  min-height: 205px;
   overflow: hidden;
 
   @media ${uiKitBreakpoints.maxWidth.L} {
