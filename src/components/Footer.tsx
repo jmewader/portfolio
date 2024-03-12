@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { StyledContainer } from "./ui/Container";
-import Navigation from "./Navigation";
 import { uiKitBreakpoints, uiKitColors, uiKitFontSizes, uiKitModules } from "./constants";
 import Social from "./Social";
 import Link from "next/link";
@@ -122,10 +121,6 @@ export default function Footer() {
         </StyledFooterTop>
 
         <StyledFooterBottom>
-          {/* <nav>
-            <Navigation />
-          </nav> */}
-
           <StyledCopyright> &copy; {new Date().getFullYear()} Winnick. Создано с ❤️ и ☕</StyledCopyright>
         </StyledFooterBottom>
       </StyledFooter>

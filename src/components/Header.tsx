@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { StyledContainer } from "./ui/Container";
-import Navigation from "./Navigation";
 import { uiKitBreakpoints, uiKitModules } from "./constants";
 import Social from "./Social";
 import Image from "next/image";
@@ -48,9 +47,6 @@ export default function Header() {
         </Link>
 
         <StyledHeaderWrap>
-          {/* <nav>
-            <Navigation />
-          </nav> */}
           <Social />
         </StyledHeaderWrap>
       </StyledHeader>
