@@ -22,15 +22,20 @@ const StyledBg = styled(Image)`
   }
 `;
 
+const StyledWrap = styled.div`
+  overflow: hidden;
+  width: 100%;
+`;
+
 export default function Home() {
   return (
-    <>
+    <StyledWrap>
       <StyledBg src={BgImage} alt="bg" />
       <Layout>
         <Hero />
         <TechStack />
         <Projects />
       </Layout>
-    </>
+    </StyledWrap>
   );
 }
