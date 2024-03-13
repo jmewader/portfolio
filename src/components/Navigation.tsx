@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { uiKitColors, uiKitFontSizes, uiKitFontWeights, uiKitLineHeights, uiKitModules } from "./constants";
+import { uiKitBreakpoints, uiKitColors, uiKitFontSizes, uiKitFontWeights, uiKitLineHeights, uiKitModules } from "./constants";
 import Link from "next/link";
 
 const StyledNavigation = styled.ul`
@@ -7,6 +7,10 @@ const StyledNavigation = styled.ul`
   display: flex;
   width: 100%;
   gap: ${uiKitModules.x10}px;
+
+  @media ${uiKitBreakpoints.maxWidth.S} {
+    display: none;
+  }
 `;
 
 const StyledNavigationItem = styled.li`
