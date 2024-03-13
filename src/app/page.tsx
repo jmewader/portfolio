@@ -7,7 +7,8 @@ import TechStack from "~src/components/widgets/TechStack";
 import BgImage from "~src/images/bg.png";
 import styled from "styled-components";
 import { uiKitBreakpoints } from "~src/components/constants";
-import Layout from "~src/components/Layout";
+import Header from "~src/components/Header";
+import Footer from "~src/components/Footer";
 
 const StyledBg = styled(Image)`
   position: absolute;
@@ -31,11 +32,13 @@ export default function Home() {
   return (
     <StyledWrap>
       <StyledBg src={BgImage} alt="bg" />
-      <Layout>
+      <Header />
+      <main>
         <Hero />
         <TechStack />
         <Projects />
-      </Layout>
+      </main>
+      <Footer />
     </StyledWrap>
   );
 }
