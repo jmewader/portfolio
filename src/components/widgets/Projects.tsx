@@ -227,7 +227,7 @@ export default function Projects() {
 
   return (
     <StyledContainer>
-      <StyledProjects>
+      <StyledProjects id="projects">
         <StyledSubtitle>Проекты</StyledSubtitle>
         <StyledMainDescriptions>Примеры моих коммерческих и пет-проектов</StyledMainDescriptions>
 

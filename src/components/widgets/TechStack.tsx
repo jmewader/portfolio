@@ -108,7 +108,7 @@ const StyledIconListImage = styled(Image)`
 export default function TechStack() {
   return (
     <StyledContainer>
-      <StyledTechStack>
+      <StyledTechStack id="skills">
         <StyledTechStackTextBlock>
           <StyledTechStackTitle>Мой стек технологий</StyledTechStackTitle>
           <StyledMainDescriptions>Технологии, которые я&nbsp;использую в&nbsp;своих проектах</StyledMainDescriptions>
