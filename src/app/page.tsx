@@ -8,6 +8,7 @@ import styled from "styled-components";
 import { uiKitBreakpoints } from "~src/components/constants";
 import Header from "~src/components/Header";
 import Footer from "~src/components/Footer";
+import GoogleAnalyticsScript from "./google-analytics";
 
 const StyledBg = styled(Image)`
   position: absolute;
@@ -38,6 +39,7 @@ export default function Home() {
         <Projects />
       </main>
       <Footer />
+      <GoogleAnalyticsScript />
     </StyledWrap>
   );
 }
