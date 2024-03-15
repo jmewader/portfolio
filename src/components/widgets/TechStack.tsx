@@ -110,7 +110,7 @@ export default function TechStack() {
     <StyledContainer>
       <StyledTechStack id="skills">
         <StyledTechStackTextBlock>
-          <StyledTechStackTitle>Мой стек технологий</StyledTechStackTitle>
+          <StyledTechStackTitle>Мой стек</StyledTechStackTitle>
           <StyledMainDescriptions>Технологии, которые я&nbsp;использую в&nbsp;своих проектах</StyledMainDescriptions>
         </StyledTechStackTextBlock>
 
