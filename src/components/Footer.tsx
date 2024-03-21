@@ -96,7 +96,7 @@ const StyledDesktopVisible = styled.div`
 const ContactInfo = () => {
   return (
     <StyledContactInfo>
-      <StyledContactLink href="tel:+79523635050">+7 (952) 3635050</StyledContactLink>
+      <StyledContactLink href="tel:+79523635050">+7 (952) 363-50-50</StyledContactLink>
       <StyledContactLink href="mailto:anastasiabovanenko@gmail.com">anastasiabovanenko@gmail.com</StyledContactLink>
     </StyledContactInfo>
   );
