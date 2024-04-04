@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import IconTelegram from "~src/images/telegram.svg";
 import IconGitHub from "~src/images/github.svg";
+import IconLinkedin from "~src/images/linkedin.svg";
 
 const StyledSocial = styled.ul`
   list-style: none;
@@ -18,16 +19,22 @@ const StyledSocialItemLink = styled(Link)`
 
 const SocialList = [
   {
+    title: "Github",
+    icon: IconGitHub,
+    alt: "github",
+    url: "https://github.com/jmewader",
+  },
+  {
     title: "Telegram",
     icon: IconTelegram,
     alt: "telegram",
     url: "https://t.me/jmewader",
   },
   {
-    title: "Github",
-    icon: IconGitHub,
-    alt: "github",
-    url: "https://github.com/jmewader",
+    title: "Linkedin",
+    icon: IconLinkedin,
+    alt: "linkedin",
+    url: "https://www.linkedin.com/in/anastasia-bovanenko",
   },
 ];
 
