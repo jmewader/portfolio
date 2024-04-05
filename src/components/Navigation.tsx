@@ -20,6 +20,11 @@ const StyledNavigationItem = styled.li`
   font-size: ${uiKitFontSizes.XS}px;
   font-weight: ${uiKitFontWeights.medium};
   line-height: ${uiKitLineHeights.x13}px;
+  transition: 0.25s;
+
+  &:hover {
+    color: ${uiKitColors.bgAccentRed};
+  }
 `;
 
 const NavigationList = [

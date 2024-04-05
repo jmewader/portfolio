@@ -63,6 +63,11 @@ const StyledContactInfo = styled.div`
 const StyledContactLink = styled(Link)`
   color: ${uiKitColors.textSecondary};
   text-decoration: none;
+  transition: 0.25s;
+
+  &:hover {
+    color: ${uiKitColors.bgAccentRed};
+  }
 `;
 
 const StyledCopyright = styled.p`
