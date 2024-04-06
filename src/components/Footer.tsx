@@ -3,9 +3,8 @@ import { StyledContainer } from "./ui/Container";
 import { uiKitBreakpoints, uiKitColors, uiKitFontSizes, uiKitModules } from "./constants";
 import Social from "./Social";
 import Link from "next/link";
-import Image from "next/image";
 import { Inter } from "next/font/google";
-import LogoImage from "~src/images/logoV2.svg";
+import Logo from "./Logo";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -80,16 +79,6 @@ const StyledCopyright = styled.p`
   text-align: center;
 `;
 
-const StyledFooterLogo = styled(Image)`
-  display: flex;
-  position: relative;
-
-  @media ${uiKitBreakpoints.maxWidth.L} {
-    width: 70px;
-    height: 50px;
-  }
-`;
-
 const StyledDesktopVisible = styled.div`
   display: flex;
 
@@ -113,7 +102,7 @@ export default function Footer() {
       <StyledFooter>
         <StyledFooterTop>
           <Link href="/">
-            <StyledFooterLogo src={LogoImage} alt="logo" width={90} height={70} />
+            <Logo isGrey />
           </Link>
 
           <StyledFooterContact>

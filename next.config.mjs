@@ -1,6 +1,18 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    swcMinify: true,
+  swcMinify: true,
 };
 
-export default nextConfig;
+export default {
+  ...nextConfig,
+  webpack(config, options) {
+    config.module.rules.push({
+      test: /\.svg$/,
+      use: ["@svgr/webpack"],
+    }, );
+
+    return config;
+  },
+};
+
+

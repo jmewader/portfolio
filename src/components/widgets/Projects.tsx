@@ -178,6 +178,11 @@ const StyledProjectsListItemActionsItem = styled(Link)`
   gap: ${uiKitModules.x2}px;
   width: fit-content;
 
+  svg {
+    width: 16px;
+    height: 16px;
+  }
+
   &:hover {
     text-decoration: none;
   }
@@ -258,13 +263,12 @@ export default function Projects() {
 
                 <StyledProjectsListItemActions>
                   <StyledProjectsListItemActionsItem href={item.previewLink} target="_blank">
-                    <Image src={PreviewIcon} alt="icon" width={16} height={16} /> Live Preview
+                    <PreviewIcon /> Live Preview
                   </StyledProjectsListItemActionsItem>
 
                   {item.codeLink && (
                     <StyledProjectsListItemActionsItem href={item.codeLink} target="_blank">
-                      <Image src={PreviewCodeIcon} alt="icon" width={16} height={16} />
-                      View Code
+                      <PreviewCodeIcon /> View Code
                     </StyledProjectsListItemActionsItem>
                   )}
                 </StyledProjectsListItemActions>

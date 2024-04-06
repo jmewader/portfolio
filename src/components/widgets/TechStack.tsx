@@ -14,21 +14,27 @@ import GitIcon from "~src/images/tech/git-icon.svg";
 import VsCodeIcon from "~src/images/tech/vscode.svg";
 import FigmaIcon from "~src/images/tech/figma.svg";
 import SassIcon from "~src/images/tech/sass.svg";
-import Image from "next/image";
 
-const ICONS = [
-  { title: "html", icon: HtmlIcon },
-  { title: "css", icon: CssIcon },
-  { title: "typeScript", icon: TypeScriptIcon },
-  { title: "javaScript", icon: JavaScriptIcon },
-  { title: "react", icon: ReactIcon },
-  { title: "redux", icon: ReduxIcon },
-  { title: "sass", icon: SassIcon },
-  { title: "nextJs", icon: NextJsIcon },
-  { title: "git", icon: GitIcon },
-  { title: "figma", icon: FigmaIcon },
-  { title: "vsCode", icon: VsCodeIcon },
-  { title: "gitHub", icon: GitHubIcon },
+type IconType = "html" | "css" | "typeScript" | "javaScript" | "react" | "redux" | "nextJs" | "gitHub" | "git" | "vsCode" | "figma" | "sass";
+
+type IconItem = {
+  title: IconType;
+  icon: JSX.Element;
+};
+
+const ICONS: IconItem[] = [
+  { title: "html", icon: <HtmlIcon /> },
+  { title: "css", icon: <CssIcon /> },
+  { title: "typeScript", icon: <TypeScriptIcon /> },
+  { title: "javaScript", icon: <JavaScriptIcon /> },
+  { title: "react", icon: <ReactIcon /> },
+  { title: "redux", icon: <ReduxIcon /> },
+  { title: "sass", icon: <SassIcon /> },
+  { title: "nextJs", icon: <NextJsIcon /> },
+  { title: "git", icon: <GitIcon /> },
+  { title: "figma", icon: <FigmaIcon /> },
+  { title: "vsCode", icon: <VsCodeIcon /> },
+  { title: "gitHub", icon: <GitHubIcon /> },
 ];
 
 const StyledTechStack = styled.section`
@@ -89,19 +95,20 @@ const StyledIconList = styled.ul`
   }
 `;
 
-const StyledIconListImage = styled(Image)`
-  position: relative;
-  width: 80px;
-  height: 80px;
+const StyledIconListItem = styled.li`
+  svg {
+    width: 80px;
+    height: 80px;
 
-  @media ${uiKitBreakpoints.maxWidth.L} {
-    width: 65px;
-    height: 65px;
-  }
+    @media ${uiKitBreakpoints.maxWidth.L} {
+      width: 65px;
+      height: 65px;
+    }
 
-  @media ${uiKitBreakpoints.maxWidth.S} {
-    width: 50px;
-    height: 50px;
+    @media ${uiKitBreakpoints.maxWidth.S} {
+      width: 50px;
+      height: 50px;
+    }
   }
 `;
 
@@ -116,9 +123,7 @@ export default function TechStack() {
 
         <StyledIconList>
           {ICONS.map((item, index) => (
-            <li key={index}>
-              <StyledIconListImage src={item.icon} alt={item.title} width={80} height={80} />
-            </li>
+            <StyledIconListItem key={index}>{item.icon}</StyledIconListItem>
           ))}
         </StyledIconList>
       </StyledTechStack>
