@@ -114,14 +114,30 @@ const StyledProjectsListItemContent = styled.div`
   height: 100%;
   justify-content: space-between;
   gap: ${uiKitModules.x5}px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -69px;
+    left: 0;
+    width: 100%;
+    height: 69px;
+    background: linear-gradient(0, #363636 10%, rgba(255, 255, 255, 0) 100%);
+    z-index: 1;
+  }
 
   @media ${uiKitBreakpoints.maxWidth.L} {
     padding: ${uiKitModules.x6}px ${uiKitModules.x8}px;
-    height: auto;
+
+    &::after {
+      top: -40px;
+      height: 40px;
+    }
   }
 
   @media ${uiKitBreakpoints.maxWidth.S} {
-    padding: ${uiKitModules.x4}px ${uiKitModules.x6}px;
+    padding: ${uiKitModules.x6}px;
     gap: ${uiKitModules.x2}px;
   }
 
@@ -143,12 +159,15 @@ const StyledProjectsListItemImage = styled(Image)`
     object-position: top;
     object-fit: cover;
     height: auto;
-    min-height: 170px;
-    max-height: 340px;
+    height: 205px;
   }
 
   @media ${uiKitBreakpoints.maxWidth.S} {
-    max-height: 290px;
+    min-height: 290px;
+  }
+
+  @media ${uiKitBreakpoints.maxWidth.XS} {
+    min-height: 180px;
   }
 `;
 
