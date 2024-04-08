@@ -115,9 +115,18 @@ const StyledProjectsListItemContent = styled.div`
   justify-content: space-between;
   gap: ${uiKitModules.x5}px;
 
+  @media ${uiKitBreakpoints.maxWidth.L} {
+    padding: ${uiKitModules.x6}px ${uiKitModules.x8}px;
+    height: auto;
+  }
+
   @media ${uiKitBreakpoints.maxWidth.S} {
-    padding: ${uiKitModules.x4}px ${uiKitModules.x4}px;
+    padding: ${uiKitModules.x4}px ${uiKitModules.x6}px;
     gap: ${uiKitModules.x2}px;
+  }
+
+  @media ${uiKitBreakpoints.maxWidth.XS} {
+    padding: ${uiKitModules.x4}px;
   }
 `;
 
@@ -133,6 +142,13 @@ const StyledProjectsListItemImage = styled(Image)`
   @media ${uiKitBreakpoints.maxWidth.L} {
     object-position: top;
     object-fit: cover;
+    height: auto;
+    min-height: 170px;
+    max-height: 340px;
+  }
+
+  @media ${uiKitBreakpoints.maxWidth.S} {
+    max-height: 290px;
   }
 `;
 
