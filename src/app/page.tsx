@@ -31,7 +31,7 @@ const StyledWrap = styled.div`
 export default function Home() {
   return (
     <StyledWrap>
-      <StyledBg src={BgImage} alt="bg" />
+      <StyledBg src={BgImage} alt="bg" loading="lazy" />
       <Header />
       <main>
         <Hero />
