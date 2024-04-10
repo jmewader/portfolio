@@ -13,7 +13,7 @@ const StyledHeader = styled.header`
   width: 100%;
   display: flex;
   align-items: center;
-  padding: ${uiKitModules.x10}px 0;
+  padding: ${uiKitModules.x7}px 0;
   justify-content: space-between;
   position: relative;
 

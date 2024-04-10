@@ -12,7 +12,7 @@ const StyledFooter = styled.footer`
   width: 100%;
   display: flex;
   align-items: flex-start;
-  padding: ${uiKitModules.x10}px 0;
+  padding: ${uiKitModules.x7}px 0;
   justify-content: space-between;
   flex-direction: column;
   position: relative;
@@ -27,7 +27,7 @@ const StyledFooterTop = styled.div`
   width: 100%;
   align-items: center;
   justify-content: space-between;
-  padding: 0 0 ${uiKitModules.x8}px;
+  padding: 0 0 ${uiKitModules.x7}px;
 
   @media ${uiKitBreakpoints.maxWidth.L} {
     padding: 0 0 ${uiKitModules.x4}px;
@@ -40,7 +40,7 @@ const StyledFooterBottom = styled.div`
   align-items: center;
   width: 100%;
   border-top: 2px solid ${uiKitColors.strokesInvert};
-  padding: ${uiKitModules.x8}px 0 0;
+  padding: ${uiKitModules.x7}px 0 0;
 
   @media ${uiKitBreakpoints.maxWidth.L} {
     padding: ${uiKitModules.x4}px 0 0;

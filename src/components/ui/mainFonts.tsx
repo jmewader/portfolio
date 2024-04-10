@@ -40,11 +40,10 @@ export const StyledSubtitle = styled.h2`
 `;
 
 export const StyledMainDescriptions = styled.p`
-  font-size: ${uiKitFontSizes.S}px;
+  font-size: ${uiKitFontSizes.XS}px;
   color: ${uiKitColors.textSecondary};
 
   @media ${uiKitBreakpoints.maxWidth.L} {
-    font-size: ${uiKitFontSizes.XS}px;
     text-align: center;
   }
 

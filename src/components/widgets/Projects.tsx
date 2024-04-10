@@ -41,11 +41,11 @@ type TabsType = {
 };
 
 const PROJECTS_COMMERCIAL_DATA: ProjectType[] = [
-  { title: "Skillbox Английский", descriptions: "Онлайн-школа английского языка, предоставляющая курсы по различным направлениям.", techStack: "HTML, CSS, TypeScript, React, Next.js, Vercel, Redux, Storybook, Strapi", previewLink: "https://eng.skillbox.ru", image: EngSkillboxImage },
-  { title: "Skin-Expert", descriptions: "Портал о косметологии и пластической хирургии.", techStack: "HTML, CSS, JavaScript, React, Node.js, Storybook", previewLink: "https://ru.skin.expert", image: SkinExpertImage },
-  { title: "ProJapan", descriptions: "Веб-сайт по покупке мотоциклов из Японии.", techStack: "HTML, CSS, JavaScript, React", previewLink: "https://projapan.ru", image: ProJapanImage },
-  { title: "Amist", descriptions: "Веб-сайт по продаже туров в Южно-Сахалинске.", techStack: "HTML, CSS, JavaScript, React", previewLink: "https://amist.ru", image: AmistImage },
-  { title: "Don-Telefon", descriptions: "Интернет-магазин по продаже бытовой и электронной техники.", techStack: "HTML, CSS, JavaScript, React", previewLink: "https://don-telefon.ru", image: DonTelefonImage },
+  { title: "Skillbox Английский", descriptions: "Онлайн-школа английского языка, предоставляющая курсы по различным направлениям.", techStack: "HTML, CSS, TypeScript, React, Next.js, Vercel, Storybook, Strapi", previewLink: "https://eng.skillbox.ru", image: EngSkillboxImage },
+  { title: "Skin-Expert", descriptions: "Портал о косметологии и пластической хирургии.", techStack: "HTML, CSS, JavaScript, React, Redux, Node.js, Storybook", previewLink: "https://ru.skin.expert", image: SkinExpertImage },
+  { title: "ProJapan", descriptions: "Веб-сайт по покупке мотоциклов из Японии.", techStack: "HTML, CSS, JavaScript, React, Redux", previewLink: "https://projapan.ru", image: ProJapanImage },
+  { title: "Amist", descriptions: "Веб-сайт по продаже туров в Южно-Сахалинске.", techStack: "HTML, CSS, JavaScript, React, Redux", previewLink: "https://amist.ru", image: AmistImage },
+  { title: "Don-Telefon", descriptions: "Интернет-магазин по продаже бытовой и электронной техники.", techStack: "HTML, CSS, JavaScript, React, Redux", previewLink: "https://don-telefon.ru", image: DonTelefonImage },
   { title: "Ihelp", descriptions: "Сервисный центр по ремонту техники.", techStack: "HTML, CSS, JavaScript, PHP, WordPress, jQuery, Bootstrap, FTP", previewLink: "https://ihelp.moscow", image: IhelpImage },
   { title: "Interlir", descriptions: "Сайт по аренде и покупке IP-адресов.", techStack: "HTML, CSS, JavaScript, WordPress, jQuery, FTP", previewLink: "https://interlir.com", image: InterlirImage },
   { title: "ShiStudio", descriptions: "Сайт студии дизайна интерьера.", techStack: "HTML, CSS, JavaScript, Tilda", previewLink: "https://shistudio.ru", image: ShiStudioImage },
@@ -207,23 +207,19 @@ const StyledProjectsListItemActions = styled.div`
 const StyledProjectsListItemActionsItem = styled(Link)`
   display: flex;
   align-items: center;
-  font-size: ${uiKitFontSizes.XS}px;
+  font-size: ${uiKitFontSizes.XXS}px;
   font-weight: ${uiKitFontWeights.normal};
   text-decoration: underline;
   gap: ${uiKitModules.x2}px;
   width: fit-content;
 
   svg {
-    width: 16px;
-    height: 16px;
+    width: 14px;
+    height: 14px;
   }
 
   &:hover {
     text-decoration: none;
-  }
-
-  @media ${uiKitBreakpoints.maxWidth.L} {
-    font-size: ${uiKitFontSizes.XXS}px;
   }
 `;
 
@@ -238,18 +234,20 @@ const StyledProjectsTabs = styled.ul`
 `;
 
 const StyledProjectsTab = styled.li<TabsType>`
-  cursor: pointer;
-  padding: ${uiKitModules.x2}px ${uiKitModules.x4}px;
+  display: flex;
+  align-items: center;
+  padding: ${uiKitModules.x1}px ${uiKitModules.x4}px;
   color: ${({ $isActive }) => ($isActive ? `${uiKitColors.bgAccentRed}` : `${uiKitColors.textMain}`)};
   border-bottom: ${({ $isActive }) => ($isActive ? `1px solid ${uiKitColors.bgAccentRed}` : "1px solid transparent")};
   transition: 0.25s;
+  font-size: ${uiKitFontSizes.XS}px;
+  cursor: pointer;
 
   &:hover {
     color: ${uiKitColors.bgAccentRed};
   }
 
   @media ${uiKitBreakpoints.maxWidth.L} {
-    font-size: ${uiKitFontSizes.XS}px;
     padding: ${uiKitModules.x1}px ${uiKitModules.x3}px;
   }
 `;
