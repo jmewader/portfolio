@@ -22,7 +22,7 @@ const StyledHeader = styled.header`
   }
 `;
 
-const StyledHeaderWrap = styled.div`
+const StyledHeaderWrap = styled.nav`
   display: flex;
   align-items: center;
   gap: ${uiKitModules.x13}px;

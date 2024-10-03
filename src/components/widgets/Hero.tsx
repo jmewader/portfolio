@@ -78,7 +78,7 @@ export default function Hero() {
           </StyledTitle>
         </StyledHeroTextBlock>
 
-        <StyledHeroImage src={ImageHero} alt="winnick" width={260} height={260} />
+        <StyledHeroImage src={ImageHero} alt="winnick" width={260} height={260} loading="lazy" />
       </StyledHero>
     </StyledContainer>
   );

@@ -14,8 +14,10 @@ import GitIcon from "~src/images/tech/git-icon.svg";
 import VsCodeIcon from "~src/images/tech/vscode.svg";
 import FigmaIcon from "~src/images/tech/figma.svg";
 import SassIcon from "~src/images/tech/sass.svg";
+import GulpIcon from "~src/images/tech/gulp.svg";
+import PugIcon from "~src/images/tech/pug.svg";
 
-type IconType = "html" | "css" | "typeScript" | "javaScript" | "react" | "redux" | "nextJs" | "gitHub" | "git" | "vsCode" | "figma" | "sass";
+type IconType = "html" | "css" | "typeScript" | "javaScript" | "react" | "redux" | "nextJs" | "gitHub" | "git" | "vsCode" | "figma" | "sass" | "gulp" | "pug";
 
 type IconItem = {
   title: IconType;
@@ -28,10 +30,12 @@ const ICONS: IconItem[] = [
   { title: "typeScript", icon: <TypeScriptIcon /> },
   { title: "javaScript", icon: <JavaScriptIcon /> },
   { title: "react", icon: <ReactIcon /> },
-  { title: "redux", icon: <ReduxIcon /> },
-  { title: "sass", icon: <SassIcon /> },
   { title: "nextJs", icon: <NextJsIcon /> },
-  { title: "git", icon: <GitIcon /> },
+  // { title: "redux", icon: <ReduxIcon /> },
+  { title: "sass", icon: <SassIcon /> },
+  { title: "gulp", icon: <GulpIcon /> },
+  { title: "pug", icon: <PugIcon /> },
+  // { title: "git", icon: <GitIcon /> },
   { title: "figma", icon: <FigmaIcon /> },
   { title: "vsCode", icon: <VsCodeIcon /> },
   { title: "gitHub", icon: <GitHubIcon /> },
