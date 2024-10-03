@@ -10,6 +10,7 @@ type IconType = "github" | "telegram" | "linkedin";
 type SocialType = {
   title: IconType;
   url: string;
+  ariaLabel: string;
 };
 
 const ICONS: Record<IconType, JSX.Element> = {
@@ -48,14 +49,17 @@ const SocialList: SocialType[] = [
   {
     title: "github",
     url: "https://github.com/jmewader",
+    ariaLabel: "github",
   },
   {
     title: "telegram",
     url: "https://t.me/jmewader",
+    ariaLabel: "telegram",
   },
   {
     title: "linkedin",
     url: "https://www.linkedin.com/in/anastasia-bovanenko",
+    ariaLabel: "linkedin",
   },
 ];
 
@@ -64,7 +68,7 @@ export default function Social() {
     <StyledSocial>
       {SocialList.map((item) => (
         <li key={item.title}>
-          <StyledSocialItemLink href={item.url} target="_blank">
+          <StyledSocialItemLink href={item.url} target="_blank" aria-label={item.ariaLabel}>
             {ICONS[item.title]}
           </StyledSocialItemLink>
         </li>

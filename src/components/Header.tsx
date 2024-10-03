@@ -32,7 +32,7 @@ export default function Header() {
   return (
     <StyledContainer className={inter.className}>
       <StyledHeader>
-        <Link href="/">
+        <Link href="/" aria-label="logo">
           <Logo />
         </Link>
 

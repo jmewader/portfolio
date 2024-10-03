@@ -101,7 +101,7 @@ export default function Footer() {
     <StyledContainer className={inter.className}>
       <StyledFooter>
         <StyledFooterTop>
-          <Link href="/">
+          <Link href="/" aria-label="logo">
             <Logo isGrey />
           </Link>
 

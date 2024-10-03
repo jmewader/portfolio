@@ -79,7 +79,7 @@ const StyledIconList = styled.ul`
   display: flex;
   gap: ${uiKitModules.x15}px ${uiKitModules.x20}px;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
 
   @media ${uiKitBreakpoints.maxWidth.L} {
     gap: ${uiKitModules.x12}px ${uiKitModules.x17}px;
@@ -87,7 +87,7 @@ const StyledIconList = styled.ul`
 
   @media ${uiKitBreakpoints.maxWidth.S} {
     gap: ${uiKitModules.x8}px ${uiKitModules.x13}px;
-    grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(65px, 1fr));
   }
 
   @media ${uiKitBreakpoints.maxWidth.XS} {
@@ -96,6 +96,9 @@ const StyledIconList = styled.ul`
 `;
 
 const StyledIconListItem = styled.li`
+  display: flex;
+  align-items: center;
+
   svg {
     width: 80px;
     height: 80px;
