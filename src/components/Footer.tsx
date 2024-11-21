@@ -91,7 +91,7 @@ const ContactInfo = () => {
   return (
     <StyledContactInfo>
       <StyledContactLink href="tel:+79523635050">+7 (952) 363-50-50</StyledContactLink>
-      <StyledContactLink href="mailto:anastasiabovanenko@gmail.com">anastasiabovanenko@gmail.com</StyledContactLink>
+      <StyledContactLink href="mailto:winnick.dev@gmail.com">winnick.dev@gmail.com</StyledContactLink>
     </StyledContactInfo>
   );
 };
