@@ -10,6 +10,8 @@ import IhelpImage from "~src/images/projects/ihelp.png";
 import AmistImage from "~src/images/projects/amist.png";
 import DonTelefonImage from "~src/images/projects/don-telefon.png";
 import HappyPiplImage from "~src/images/projects/happy-pipl.png";
+import LectariumImage from "~src/images/projects/lectarium.png";
+import MbkImage from "~src/images/projects/mbk.png";
 import AdresatProImage from "~src/images/projects/adresat-pro.png";
 import InterlirImage from "~src/images/projects/interlir.png";
 import ShiStudioImage from "~src/images/projects/shi-studio.png";
@@ -41,16 +43,18 @@ type TabsType = {
 };
 
 const PROJECTS_COMMERCIAL_DATA: ProjectType[] = [
-  { title: "Skillbox Английский", descriptions: "Онлайн-школа английского языка, предоставляющая курсы по различным направлениям.", techStack: "HTML, CSS, TypeScript, React, Next.js, Vercel, Storybook, Strapi", previewLink: "https://eng.skillbox.ru", image: EngSkillboxImage },
-  { title: "Skin-Expert", descriptions: "Портал о косметологии и пластической хирургии.", techStack: "HTML, CSS, JavaScript, React, Redux, Node.js, Storybook", previewLink: "https://ru.skin.expert", image: SkinExpertImage },
-  { title: "ProJapan", descriptions: "Веб-сайт по покупке мотоциклов из Японии.", techStack: "HTML, CSS, JavaScript, React, Redux", previewLink: "https://projapan.ru", image: ProJapanImage },
-  { title: "Amist", descriptions: "Веб-сайт по продаже туров в Южно-Сахалинске.", techStack: "HTML, CSS, JavaScript, React, Redux", previewLink: "https://amist.ru", image: AmistImage },
-  { title: "Don-Telefon", descriptions: "Интернет-магазин по продаже бытовой и электронной техники.", techStack: "HTML, CSS, JavaScript, React, Redux", previewLink: "https://don-telefon.ru", image: DonTelefonImage },
+  { title: "Skillbox Английский", descriptions: "Онлайн-школа английского языка, предоставляющая курсы по различным направлениям.", techStack: "TypeScript, React, Next.js, Vercel, Storybook, Strapi", previewLink: "https://eng.skillbox.ru", image: EngSkillboxImage },
+  { title: "Skin-Expert", descriptions: "Портал о косметологии и пластической хирургии.", techStack: "JavaScript, React, Redux, Node.js, Storybook", previewLink: "https://ru.skin.expert", image: SkinExpertImage },
+  { title: "ProJapan", descriptions: "Веб-сайт по покупке мотоциклов из Японии.", techStack: "JavaScript, React, Redux", previewLink: "https://projapan.ru", image: ProJapanImage },
+  { title: "Amist", descriptions: "Веб-сайт по продаже туров в Южно-Сахалинске.", techStack: "JavaScript, React, Redux", previewLink: "https://amist.ru", image: AmistImage },
+  { title: "Don-Telefon", descriptions: "Интернет-магазин по продаже бытовой и электронной техники.", techStack: "JavaScript, React, Redux", previewLink: "https://don-telefon.ru", image: DonTelefonImage },
   { title: "Ihelp", descriptions: "Сервисный центр по ремонту техники.", techStack: "HTML, CSS, JavaScript, PHP, WordPress, jQuery, Bootstrap, FTP", previewLink: "https://ihelp.moscow", image: IhelpImage },
   { title: "Interlir", descriptions: "Сайт по аренде и покупке IP-адресов.", techStack: "HTML, CSS, JavaScript, WordPress, jQuery, FTP", previewLink: "https://interlir.com", image: InterlirImage },
-  { title: "ShiStudio", descriptions: "Сайт студии дизайна интерьера.", techStack: "HTML, CSS, JavaScript, Tilda", previewLink: "https://shistudio.ru", image: ShiStudioImage },
+  { title: "МБК", descriptions: "Профессиональные услуги в области кредитования, страхования частных и юридических лиц.", techStack: "Sass, JavaScript, Pug, Gulp", previewLink: "https://www.mbk.ru", image: MbkImage },
   { title: "AdresatPro", descriptions: "Сайт агентства недвижимости.", techStack: "HTML, CSS, JavaScript", previewLink: "https://adresat.pro", image: AdresatProImage },
+  { title: "Лектариум", descriptions: "Онлайн-школа подготовки к ЕГЭ и ОГЭ по всем предметам.", techStack: "Pug, Sass, JavaScript, Tilda, Gulp, Vue", previewLink: "https://lectarium.ru", image: LectariumImage },
   { title: "Happypipl", descriptions: "Интернет-магазин воздушных шаров.", techStack: "HTML, CSS, JavaScript, Tilda", previewLink: "https://happypipl.ru", image: HappyPiplImage },
+  { title: "ShiStudio", descriptions: "Сайт студии дизайна интерьера.", techStack: "HTML, CSS, JavaScript, Tilda", previewLink: "https://shistudio.ru", image: ShiStudioImage },
 ];
 
 const PROJECTS_PET_DATA: ProjectType[] = [
