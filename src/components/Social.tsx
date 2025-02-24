@@ -53,7 +53,7 @@ const SocialList: SocialType[] = [
   },
   {
     title: "telegram",
-    url: "https://t.me/jmewader",
+    url: "https://t.me/winnick_dev",
     ariaLabel: "telegram",
   },
   {
